@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contactez Pamella pour une opportunité d'alternance en Bachelor Design Graphique et Digital. Discutons de votre projet.">
+  <meta name="theme-color" content="#38DCE9">
+  <title>Contact — Pamella</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="bg-fixed" aria-hidden="true"></div>
+  <a href="#main-content" class="skip-link">Aller au contenu principal</a>
+  <header class="header">
+    <a href="index.html#top" class="header__brand">
+      <img src="images/Logo Shiba secondaire.webp" alt="Logo Pamella Defrend, retour à l'accueil" class="header__logo-img">
+      <span class="header__name">Pamella Defrend</span>
+    </a>
+    <button type="button" class="header__burger" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="header-nav" id="header-burger">
+      <span class="header__burger-line"></span>
+      <span class="header__burger-line"></span>
+      <span class="header__burger-line"></span>
+    </button>
+    <nav class="header__nav" id="header-nav">
+      <a href="index.html">Accueil</a>
+      <a href="about.html">À propos</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="contact.html" class="header__nav-btn active">Contact</a>
+    </nav>
+  </header>
+
+  <div class="page-banner page-banner--contact" role="banner">
+    <img src="images/Banniere/Shiba_gambade_dans_champs_fleuri.webp" alt="Shiba gambadant dans un champ fleuri, bannière Contact" class="page-banner__img" loading="eager" onerror="this.style.display='none'">
+    <div class="page-banner__overlay">
+      <div class="page-banner__text">
+        <h1 class="page-banner__title">Contact</h1>
+        <p class="page-banner__tagline">Échangeons autour de votre projet</p>
+      </div>
+    </div>
+    <a href="#main-content" class="page-banner__scroll" aria-label="Descendre au contenu">
+      <span class="page-banner__scroll-icon" aria-hidden="true">↓</span>
+    </a>
+  </div>
+
+  <main id="main-content" class="main main--contact">
+    <!-- Section Intro + visuel -->
+    <section class="contact-intro-section" aria-labelledby="contact-intro-title">
+      <div class="contact-intro-grid">
+        <div class="contact-intro-text">
+          <h2 id="contact-intro-title" class="contact-intro__title">Parlons de votre projet</h2>
+          <p class="contact-intro__paragraph">
+            Que ce soit pour une <strong>opportunité d'alternance</strong> ou une question sur mon profil, je serai ravie d'échanger avec vous.
+          </p>
+          <p class="contact-intro__paragraph">
+            Remplissez le formulaire ou contactez-moi directement. Je m'efforce de répondre à toutes les demandes rapidement.
+          </p>
+          <ul class="contact-intro__list">
+            <li><span class="contact-intro__icon" aria-hidden="true"><img src="images/Icones/Lieu.webp" alt="" class="contact-intro__icon-img"></span> Roanne</li>
+            <li><span class="contact-intro__icon" aria-hidden="true"><img src="images/Icones/Mail.webp" alt="" class="contact-intro__icon-img"></span> p.defrend@gmail.com</li>
+          </ul>
+          <a href="#contact-form" class="btn btn--primary">Envoyer un message</a>
+        </div>
+        <div class="contact-intro-visual">
+          <img src="images/contact/Accord_communication_graphiste.webp" alt="Échange et communication entre graphiste et client, projet professionnel" class="contact-intro__img" loading="lazy" onerror="this.style.display='none'">
+        </div>
+      </div>
+    </section>
+
+    <!-- Section formulaire + infos pratiques -->
+    <section id="contact-form" class="contact-form-section" aria-labelledby="contact-form-title">
+      <div class="contact-grid">
+        <div class="contact-info-column">
+          <div class="contact-map-card">
+            <h2 class="contact-map__title">Ma localisation</h2>
+            <div class="contact-map__wrapper">
+              <iframe
+                src="https://www.openstreetmap.org/export/embed.html?bbox=4.02%2C45.99%2C4.12%2C46.08&layer=mapnik&marker=46.0367%2C4.0688"
+                width="100%"
+                height="280"
+                style="border:0;"
+                loading="lazy"
+                title="Carte - Roanne">
+              </iframe>
+            </div>
+            <a href="https://www.google.com/maps/search/Roanne%2C+France" target="_blank" rel="noopener noreferrer" class="contact-map__link">Ouvrir dans Google Maps</a>
+          </div>
+
+          <div class="contact-photo-card">
+            <img src="images/contact/Fleurs_roses.webp" alt="Fleurs roses, ambiance contact et bienveillance" class="contact-photo__img" loading="lazy" onerror="this.style.display='none'">
+          </div>
+        </div>
+
+        <div class="contact-form-wrapper">
+          <div class="contact-form__header">
+            <h2 id="contact-form-title" class="contact-form__title">Envoyez-moi un message</h2>
+            <span class="contact-form__badge">Réponse rapide</span>
+          </div>
+          <form id="contactForm" class="contact-form" action="https://formspree.io/f/xlgoreke" method="post" data-no-backend-msg="Créez un formulaire sur Formspree puis remplacez YOUR_FORM_ID dans l'attribut action du formulaire.">
+            <div class="form-group">
+              <label for="name">Nom complet</label>
+              <input type="text" id="name" name="name" required placeholder="Votre nom et prénom" autocomplete="name">
+            </div>
+            <div class="form-group">
+              <label for="email">Adresse email</label>
+              <input type="email" id="email" name="email" required placeholder="votre@email.fr" autocomplete="email">
+            </div>
+            <div class="form-group">
+              <label for="phone">Téléphone</label>
+              <input type="tel" id="phone" name="phone" placeholder="06 12 34 56 78" autocomplete="tel">
+            </div>
+            <div class="form-group">
+              <label for="company">Entreprise</label>
+              <input type="text" id="company" name="company" placeholder="Nom de votre entreprise">
+            </div>
+            <div class="form-group">
+              <label for="subject">Sujet</label>
+              <select id="subject" name="subject" required>
+                <option value="">Choisissez un sujet</option>
+                <option value="alternance">Alternance</option>
+                <option value="question">Question sur mon profil</option>
+                <option value="autre">Autre</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" required placeholder="Décrivez votre projet ou votre opportunité d'alternance..." rows="5"></textarea>
+            </div>
+            <div class="form-honeypot" aria-hidden="true">
+              <label for="website">Ne pas remplir ce champ</label>
+              <input type="text" id="website" name="_gotcha" tabindex="-1" autocomplete="off">
+            </div>
+            <input type="hidden" name="_subject" value="Nouveau message depuis le site portfolio">
+            <input type="hidden" name="_language" value="fr">
+            <button type="submit" class="btn btn--primary btn--block">Envoyer le message</button>
+            <p id="contactFormStatus" class="contact-form__status" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Section CTA pleine largeur -->
+  <section class="cta-section" aria-labelledby="titre-cta-contact">
+    <div class="cta-section__inner">
+      <h2 id="titre-cta-contact" class="cta-section__title">Envie d'<strong>en savoir plus</strong> ?</h2>
+      <p class="cta-section__text">Découvrez <strong>mon portfolio</strong> et <strong>mes réalisations</strong>, ou parcourez <strong>mon profil</strong> pour mieux me connaître.</p>
+      <div class="cta-section__buttons">
+        <a href="portfolio.html" class="btn btn--primary btn--large">Voir mon portfolio</a>
+        <a href="about.html" class="btn btn--secondary btn--large">En savoir plus sur moi</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer__grid">
+      <div class="footer__col">
+        <a href="index.html#top" class="footer__logo-link"><img src="images/Logo Shiba prinicpal.webp" alt="Logo Pamella Defrend, retour à l'accueil" class="footer__logo-img"></a>
+      </div>
+      <div class="footer__col">
+        <ul class="footer__links">
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="about.html">À propos</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <span class="footer__title">Pamella Defrend <br> Bachelor Design Graphique et Digital</span>
+        <p class="footer__contact">
+          Email : <a href="mailto:p.defrend@gmail.com">p.defrend@gmail.com</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <button type="button" id="scrollToTop" class="scroll-to-top" aria-label="Retour en haut de la page">
+    <span aria-hidden="true">↑</span>
+  </button>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
